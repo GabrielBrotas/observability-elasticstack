@@ -1,0 +1,3 @@
+elasticsearch_data/*
+!elasticsearch_data/.gitkeep
+.docker/pgdata/*

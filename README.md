@@ -12,7 +12,34 @@ cd beats/metric
 sudo chown root metricbeat.yml 
 ```
 
+## Beats
+https://www.elastic.co/beats/
+
+
+**Metricbeat** <br >
+
 1 - Open kibana:
     localhost:5601
 
-# observability-elasticstack
+    # dashboard
+    Analytics -> Dashboard -> Search: Docker
+
+    # analytics
+    Observability -> Metrics -> Show: Docker containers
+    Analytics -> Discover 
+
+
+**Heartbeat**
+1 - create the simplego-api container (or any container but update the name on beats/heartbeat/heartbeat.yml)
+2 - uptime -> verify services
+    localhost:5601
+    Observability -> Uptime
+
+**APM** with RUM
+allow us to stacktrace the application logs, errors, and more
+
+
+install the agent to monitor the application
+https://www.elastic.co/guide/en/apm/agent/index.html
+    Observability -> APM
+
